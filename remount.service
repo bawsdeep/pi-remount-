@@ -1,0 +1,10 @@
+[Unit]
+Description=USB Remount Watchdog
+
+[Service]
+Type=simple
+ExecStart=/usr/local/share/remount.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
